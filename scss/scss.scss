@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Balsamiq Sans", cursive;
+}
+.header {
+  height: 100vh;
+  background: {
+    image: url("https://images.unsplash.com/photo-1528076225979-12893c7d55e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1991&q=80");
+    size: cover;
+    repeat: no-repeat;
+    position: center;
+    attachment: fixed;
+    padding-top: 100px;
+  }
+  .top-title {
+    margin-bottom: 50px;
+    text-align: center;
+    text-shadow: 0px 0px 2px black;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 150px;
+  }
+  .left-panel {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    .contact-class {
+      padding-bottom: 25px;
+      text-shadow: 0px 0px 2px black;
+    }
+    .col-6 {
+      max-width: 100%;
+      padding-bottom: 20px;
+      div h2 {
+        opacity: 0.5;
+        font-size: 30px;
+        font-weight: lighter;
+        text-shadow: 0px 0px 5px rgb(0, 0, 0);
+      }
+      div p {
+        opacity: 0.8;
+        font-size: 20px;
+        margin-top: 10px;
+        font-weight: lighter;
+        text-shadow: 0px 0px 10px rgb(0, 0, 0);
+      }
+      display: flex;
+      .col-7 {
+        max-width: 100%;
+        padding-right: 20px;
+      }
+      .col-7 img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+  .right-panel {
+    box-shadow: 0px 0px 10px black;
+    padding-top: 20px;
+    width: 500px;
+    height: 700px;
+    padding: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    .right-panel-inside-cont {
+      max-width: 100%;
+      margin: auto;
+      .header-right-title h1 {
+        color: black;
+        font-weight: 100;
+      }
+      .right-panel-form {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding-top: 25px;
+        padding-left: 20px;
+        .col-1 input {
+          color: black;
+          padding: 20px;
+          padding-right: 150px;
+          font-size: 20px;
+          border: none;
+        }
+        .col-4 input {
+          color: black;
+          padding: 20px;
+          padding-bottom: 150px;
+          padding-right: 150px;
+          font-size: 20px;
+          border: none;
+        }
+        .col-5-button {
+          a {
+            padding: 15px 20px;
+            background-color: #3b8afb;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 0.5s;
+            &:hover {
+              border: solid black 1px;
+              background-color: #fff;
+              color: #3b8afb;
+            }
+          }
+        }
+      }
+    }
+  }
+}
